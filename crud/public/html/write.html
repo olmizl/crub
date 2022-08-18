@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+  </head>
+  <body>
+    <!-- 데이터를 보낼 때 post로 보내는 방법 2가지 . . .
+    1) ajax 
+    2) form태그 -->
+
+    <!-- (2번째 form 태그 방법) -->
+    <form action="/add" method="POST">
+      <!-- method디폴트 = get -->
+      <input type="text" name="subject" id="subject" />
+      <textarea name="contents" id="contents" cols="30" rows="10"></textarea>
+      <!-- app.post 로 보낼때 form태그의 버튼갔을때 중요한건 name !!!! -->
+      <button>send</button>
+    </form>
+    <script>
+      // (1번째 ajax방법)$.ajax({url:"/add", method:"post", data:{
+      //   $("#contents")
+      // }})
+    </script>
+  </body>
+</html>
